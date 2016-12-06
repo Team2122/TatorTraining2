@@ -4,5 +4,5 @@ Git Training for Programming Team 2017
 ## We're going to make great code here
 
 ```
-Hello! Avery was here
+Emacs should be installed by default on all linux installations
 ```
