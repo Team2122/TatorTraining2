@@ -9,6 +9,7 @@ Connor was here too!
 ```
 
 Alex wants me to make a list of my homework:
+
 1. Physics Webassign
 2. Study for Precalc test
 3. History Notebook
