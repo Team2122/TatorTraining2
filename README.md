@@ -14,9 +14,7 @@ Git Training for Programming Team 2017
 4.
 
 ###Participating Newbie Team Members
-1. ```
-Hello! Avery was here
-```
+1. ``` Hello! Avery was here ```
 2.
 
 3.
