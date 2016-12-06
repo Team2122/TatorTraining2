@@ -3,7 +3,7 @@ Git Training for Programming Team 2017
 
 ## We're going to make great code here
 
-#Participating Veteran Team Members
+###Participating Veteran Team Members
 
 1.
 
@@ -13,7 +13,7 @@ Git Training for Programming Team 2017
 
 4.
 
-#Participating Newbie Team Members
+###Participating Newbie Team Members
 1. ```
 Hello! Avery was here
 ```
