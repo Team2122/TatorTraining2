@@ -9,6 +9,8 @@ Git Training for Programming Team 2017
 Hello! SOPHIE were here!!!!!!
 im five and what is this -- avrey
 Connor was here too!
+
+But John rules them all!!!!!!
 ```
 
 Alex wants me to make a list of my homework:
