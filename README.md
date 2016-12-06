@@ -13,7 +13,6 @@ Git Training for Programming Team 2017
 
 
 
-
 ```
 Emacs should be installed by default on all GNU/Linux installations, after all, it is a part of the GNU project
 ```
