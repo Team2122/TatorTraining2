@@ -7,3 +7,5 @@ Git Training for Programming Team 2017
 Hello! Avery AND SOPHIE were here!!!!!!
 Connor was here too!
 ```
+
+Hello people
