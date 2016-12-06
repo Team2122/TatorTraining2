@@ -1,7 +1,7 @@
-# TatorTraining
+# #TatorTraining
 Git Training for Programming Team 2017
 
-## We're going to make great code here
+## We're going to make code great again, believe me
 
 ```
 Hello! Avery AND SOPHIE were here!!!!!!
@@ -14,3 +14,5 @@ Alex wants me to make a list of my homework:
 2. Study for Precalc test
 3. History Notebook
 4. Kill everything because **NO ONE LIKES HOMEWORK**
+
+# Tony
