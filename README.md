@@ -6,7 +6,8 @@ Git Training for Programming Team 2017
 ## We're going to make code great again, believe me
 
 ```
-Hello! Avery AND SOPHIE were here!!!!!!
+Hello! SOPHIE were here!!!!!!
+im five and what is this -- avrey
 Connor was here too!
 ```
 
