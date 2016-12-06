@@ -1,5 +1,5 @@
 # Kanye 2020
-!(future president)[http://2dopeboyz.com/wp-content/uploads/2016/11/kanye2020.jpeg]
+![future president](http://2dopeboyz.com/wp-content/uploads/2016/11/kanye2020.jpeg)
 ## #TatorTraining
 Git Training for Programming Team 2017
 
