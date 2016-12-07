@@ -12,7 +12,7 @@ public class Ranger extends Character {
             other.health = (int) (Math.random() * 5 * (hitChance * 3));
             numBullets--;
         }else{
-            System.out.println("*click*");
+            System.out.println("*click*"); //clip is empty, reload
         }
     }
     @Override
