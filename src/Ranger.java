@@ -1,12 +1,12 @@
 
 public class Ranger extends Character {
-    private double hitChance;
+    private double hitMult;
     private int numBullets = 15;
     private boolean isGunClean = true;
 
-    Ranger(String name, double hitChance) {
+    Ranger(String name, double hitMult) {
         super(name);
-        this.hitChance = hitChance; //ratio of hits to misses
+        this.hitMult = hitMult; //how well of a marksman this Ranger is
     }
 
     @Override
@@ -16,7 +16,7 @@ public class Ranger extends Character {
         };
         if (isGunClean) {
             if (numBullets != 0) {
-                other.health -= (int) (Math.random() * 5 * (hitChance * 3));
+                other.health -= (int) (Math.random() * 5 * (hitMult * 3));
                 numBullets--;
                 System.out.println("bang!");
                 if (Math.random() > .99) {
