@@ -13,12 +13,16 @@ public class Rogue extends Character {
 
     public void attack(Character target) {
         double outcome = Math.random();
+        int damage = 15;
         if (outcome > 0.9) {
             System.out.println("CRITICAL HIT ZOMG");
-            target.health -= 30;
-        } else {
-            target.health -= 15;
+            damage *= 2;
+        } else if (outcome < 0.1) {
+            System.out.println("You fell on your " + getPrimaryWeapon() + ", practice more.");
+            target = this;
+            damage = (int) (damage * 1.5);
         }
+        target.health -= damage;
     }
 
     public void describeSelf() {
