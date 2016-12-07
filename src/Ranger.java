@@ -19,8 +19,10 @@ public class Ranger extends Character {
                 if (Math.random() > .99) {
                     isGunClean = false;
                 }
+                clean();
             } else {
                 System.out.println("*click*"); //clip is empty, reload
+                reload();
             }
         } else {
             this.health -= 10;
