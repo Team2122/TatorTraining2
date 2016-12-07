@@ -16,7 +16,7 @@ public abstract class Character {
     }
 
     public boolean isAlive() {
-        return this.health > 0
+        return this.health > 0;
     }
 
     /**
