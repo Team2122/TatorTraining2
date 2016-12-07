@@ -11,6 +11,9 @@ public class Ranger extends Character {
 
     @Override
     public void attack(Character other) {
+        if(other==this){
+            return; //morale is too high
+        };
         if (isGunClean) {
             if (numBullets != 0) {
                 other.health -= (int) (Math.random() * 5 * (hitChance * 3));
