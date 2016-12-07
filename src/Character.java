@@ -1,3 +1,5 @@
+import java.util.List;
+
 public abstract class Character {
     private String name;
     protected int health;
@@ -34,4 +36,11 @@ public abstract class Character {
      * Gets the name of the primary weapon of this Character
      */
     public abstract String getPrimaryWeapon();
+
+    /**
+     * Finds a target for the Character to attack
+     */
+    public int pickTarget(List<Character> potentialTargets) {
+        return (int) (Math.random() * potentialTargets.size());
+    }
 }
