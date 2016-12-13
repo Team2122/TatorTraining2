@@ -9,29 +9,12 @@ public class Rogue extends Character {
     public Rogue(String rogueName, String cloakColor) {
         super(rogueName);
         this.cloakColor = cloakColor;
-    }
-
-    public void attack(Character target) {
-        double outcome = Math.random();
-        int damage = 15;
-        if (outcome > 0.9) {
-            System.out.println("CRITICAL HIT ZOMG");
-            damage *= 2;
-        } else if (outcome < 0.1) {
-            System.out.println("You fell on your " + getPrimaryWeapon() + ", practice more.");
-            target = this;
-            damage = (int) (damage * 1.5);
-        }
-        target.health -= damage;
+        weapons.add(new Dagger("poison dagger", "shiny obsidian dagger with a weird smell", 15));
     }
 
     public void describeSelf() {
         System.out.println("I am a rogue with " + health + " health and a "
                 + cloakColor + " cloak.");
-    }
-
-    public String getPrimaryWeapon() {
-        return "Poison dagger";
     }
 
     @Override
