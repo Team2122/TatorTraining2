@@ -1,54 +1,20 @@
 
 public class Ranger extends Character {
-    private double hitMult;
-    private int numBullets = 15;
-    private boolean isGunClean = true;
+    private double hitAcc;
 
-    Ranger(String name, double hitMult) {
+    Ranger(String name, double hitAcc) {
         super(name);
-        this.hitMult = hitMult; //how well of a marksman this Ranger is
+        this.hitAcc = hitAcc; //how well of a marksman this Ranger is
+        this.addWeapon(new Rifle(this, "Mosin Nagant", "A five-shot, bolt-action, internal magazine–fed, military rifle", 20, 5));
+        this.addWeapon(new Rifle(this, "M16A1", "A famous Vietnam-era rifle, standard issue", 10, 30));
     }
 
-    @Override
-    public void attack(Character other) {
-        if(other==this){
-            return; //morale is too high
-        };
-        if (isGunClean) {
-            if (numBullets != 0) {
-                other.health -= (int) (Math.random() * 5 * (hitMult * 3));
-                numBullets--;
-                System.out.println("bang!");
-                if (Math.random() > .99) {
-                    isGunClean = false;
-                }
-                clean();
-            } else {
-                System.out.println("*click*"); //clip is empty, reload
-                reload();
-            }
-        } else {
-            this.health -= 10;
-            System.out.println("boom!");
-            //gun explodes if barrel is obstructed
-        }
+    public double getAccuracy() {
+        return hitAcc;
     }
 
     @Override
     public void describeSelf() {
         System.out.println("Hello, my name is " + getName() + ". I'm a Ranger.");
-    }
-
-    @Override
-    public String getPrimaryWeapon() {
-        return "Rifle";
-    }
-
-    public void reload() {
-        numBullets = 15;
-    }
-
-    public void clean() {
-        isGunClean = true;
     }
 }
