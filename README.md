@@ -1,16 +1,6 @@
 # TatorTraining
 Git Training for Programming Team 2017
 
-## We're going to make great code here
-
-```
-Hello! Avery AND SOPHIE were here!!!!!!
-Connor was here too!
-```
-
-Alex wants me to make a list of my homework:
-
-1. Physics Webassign
-2. Study for Precalc test
-3. History Notebook
-4. Kill everything because **NO ONE LIKES HOMEWORK**
+## Arena Game
+In the game, each character starts off in an arena. The console documents their struggles. The last person standing wins!
+To add your character to the arena, see the comment in Main.java
