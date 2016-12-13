@@ -3,6 +3,14 @@ import java.util.ArrayList;
 public class Main {
     public static void main(String[] args) {
         ArrayList<Character> characters = new ArrayList();
+        /*
+        Adding Your Character to the Arena, by Avery
+        (this line left intentionally blank, tony)
+        Below this comment, add a few of your type of character, i.e.
+        characters.add(new BlahBlah(your constructor here)
+        This works because we loop through every character, rather than hardcoding their indexes
+        Please add your character to main on a separate branch, like added-averys-char-to-main
+         */
         characters.add(new Ranger("Alex", .01));
         characters.add(new Ranger("Jimmy", .75));
         characters.add(new Ranger("Jake", .50));
