@@ -4,6 +4,7 @@ import java.util.Random;
 
 public class Main {
     public static void main(String[] args) {
+        Weapon defaultWeapon = new Fists();
         ArrayList<Character> characters = new ArrayList<>();
         /*
         Adding Your Character to the Arena, by Avery
@@ -37,12 +38,20 @@ public class Main {
                 continue;
             }
             int targetIndex = curr.pickTarget(characters);
-            if (targetIndex != i) {
-                System.out.println(curr.getName() + " attacked " +
-                        characters.get(targetIndex).getName() +
-                        " with their " + curr.getEquippedWeapon().getName());
+            if (targetIndex == -1) {
+                System.out.println(curr.getName() + "'s attack failed because" +
+                        " it couldn't find a good target.");
+                continue;
             }
-            curr.getEquippedWeapon().useOn(characters.get(targetIndex));
+            Character target = characters.get(targetIndex);
+            Weapon weapon = curr.getEquippedWeapon();
+            if (weapon == null) {
+                weapon = defaultWeapon;
+            }
+            System.out.println(curr.getName() + " attacks " +
+                    target.getName() +
+                    " with their " + weapon.getName());
+            weapon.useOn(target);
         }
         if (characters.size() == 1) {
             System.out.println(characters.get(0).getName() + " won!");
