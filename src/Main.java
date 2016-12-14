@@ -2,7 +2,7 @@ import java.util.ArrayList;
 
 public class Main {
     public static void main(String[] args) {
-        ArrayList<Character> characters = new ArrayList();
+        ArrayList<Character> characters = new ArrayList<>();
         /*
         Adding Your Character to the Arena, by Avery
         (this line left intentionally blank, tony)
