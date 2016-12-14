@@ -13,6 +13,8 @@ public class Main {
         This works because we loop through every character, rather than hardcoding their indexes
         Please add your character to main on a separate branch, like added-averys-char-to-main
          */
+        characters.add(new Doge("Doge", 10000000, 15, false));
+        characters.add(new Doge("mohland", 20000196, 5, true));
         characters.add(new Ranger("Alex", .01));
         characters.add(new Ranger("Jimmy", .75));
         characters.add(new Ranger("Jake", .50));
