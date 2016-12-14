@@ -14,6 +14,8 @@ public class Main {
         characters.add(new Ranger("Alex", .01));
         characters.add(new Ranger("Jimmy", .75));
         characters.add(new Ranger("Jake", .50));
+        characters.add(new Rogue("Tony", "green"));
+        characters.add(new Rogue("Colin", "elitist blue"));
         for (Character character : characters) {
             character.describeSelf();
         }

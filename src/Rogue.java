@@ -9,7 +9,7 @@ public class Rogue extends Character {
     public Rogue(String rogueName, String cloakColor) {
         super(rogueName);
         this.cloakColor = cloakColor;
-        weapons.add(new Dagger("poison dagger", "shiny obsidian dagger with a weird smell", 15));
+        addWeapon(new Dagger("poison dagger", "shiny obsidian dagger with a weird smell", 15));
     }
 
     public void describeSelf() {
