@@ -21,7 +21,7 @@ public class Main {
         characters.add(new Warrior("Bob", 240, 5, "green", "brown"));
         characters.add(new Warrior("Andrew", 210, 6, "blue", "black"));
         characters.add(new Warrior("Sam", 250, 5, "Hazel", "blond"));
-        Collections.shuffle(characters, new Random());
+        Collections.shuffle(characters);
         for (Character character : characters) {
             character.describeSelf();
         }
