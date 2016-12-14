@@ -36,6 +36,10 @@ public class Doge extends Character {
         return "middle-class";
     }
 
+    public void receiveTip(int value) {
+        riches += value;
+    }
+
 
     private class Paws extends Weapon {
         Paws(int strength) {
@@ -87,6 +91,7 @@ public class Doge extends Character {
                         System.out.println(target.getName() + ": I guess it didn't go through...");
                     }
                 } else {
+                    ((Doge) target).receiveTip(amount);
                     if (Math.random() < 0.6) {
                         System.out.println(target.getName() + ": Thanks!");
                     }
