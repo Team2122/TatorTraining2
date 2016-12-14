@@ -14,6 +14,8 @@ public class Sword extends Weapon {
         int breakChance = (int) (Math.random() * 100);
         if (isBroken) {
             System.out.println("Your weapon is broken you can't use it");
+            isBroken = false;
+            System.out.println("Your weapon has been fixed");
             return false;
         } else if (breakChance >= 99) {
             System.out.println("Your weapon broke! You need to fix it before it can be used again.");
