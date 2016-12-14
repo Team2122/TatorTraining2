@@ -30,6 +30,9 @@ public class Sword extends Weapon {
         } else if (hitNumber > 1) {
             System.out.println("You hit " + hitNumber + " times!");
         }
+        else {
+            System.out.println("You hit once.");
+        }
         return false;
     }
 
