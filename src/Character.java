@@ -51,6 +51,9 @@ public abstract class Character {
      * Gets the equipped weapon of this Character
      */
     public Weapon getEquippedWeapon() {
+        if (equippedWeapon == -1) {
+            return null;
+        }
         return weapons.get(equippedWeapon);
     }
 
