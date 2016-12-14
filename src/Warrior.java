@@ -11,7 +11,7 @@ public class Warrior extends Character {
 
     public Warrior(String name, int weight, int height, String eyeColor, String hairColor) {
         super(name);
-        addWeapon(new Sword(name + "'s sword", "Plain Old Sword"));
+        addWeapon(new Sword("Plain Old Sword", name + "'s weapon"));
         this.weight = weight;
         this.height = height;
         this.eyeColor = eyeColor;
