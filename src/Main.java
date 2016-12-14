@@ -44,6 +44,10 @@ public class Main {
             }
             curr.getEquippedWeapon().useOn(characters.get(targetIndex));
         }
-        System.out.println(characters.get(0).getName() + " won!");
+        if (characters.size() == 1) {
+            System.out.println(characters.get(0).getName() + " won!");
+        } else {
+            System.out.println("Mutually assured destruction");
+        }
     }
 }
