@@ -25,9 +25,11 @@ public class Main {
         for (Character character : characters) {
             character.describeSelf();
         }
+        int turns = 0;
         for (int i = 0; characters.size() != 1; i++) {
             if (i >= characters.size()) {
                 i = 0;
+                turns++;
             }
             Character curr = characters.get(i);
             if (!curr.isAlive()) {
@@ -43,6 +45,11 @@ public class Main {
                         " with their " + curr.getEquippedWeapon().getName());
             }
             curr.getEquippedWeapon().useOn(characters.get(targetIndex));
+            if (characters.size() > 0 && turns > 100 && i == 0) {
+                System.out.println("The narrator grew bored and intervened.");
+                Character dead = characters.remove(new Random().nextInt(characters.size()));
+                System.out.println(dead.getName() + " is now dead.");
+            }
         }
         System.out.println(characters.get(0).getName() + " won!");
     }
