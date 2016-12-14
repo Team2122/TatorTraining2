@@ -24,7 +24,7 @@ public class Sword extends Weapon {
          * Multiple Hit Capability
          */
         int hitNumber = (int) (Math.random() * 3);
-        other.health -= 15 * hitNumber;
+        other.health -= 10 * hitNumber;
         if (hitNumber == 0) {
             System.out.println("You missed!");
         } else if (hitNumber > 1) {

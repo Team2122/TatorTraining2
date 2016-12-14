@@ -16,6 +16,9 @@ public class Main {
         characters.add(new Ranger("Jake", .50));
         characters.add(new Rogue("Tony", "green"));
         characters.add(new Rogue("Colin", "elitist blue"));
+        characters.add(new Warrior("Bob", 240, 5, "green", "brown"));
+        characters.add(new Warrior("Andrew", 210, 6, "blue", "black"));
+        characters.add(new Warrior("Sam", 250, 5, "Hazel", "blond"));
         for (Character character : characters) {
             character.describeSelf();
         }
